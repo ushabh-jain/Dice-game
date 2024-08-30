@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import NumberSelector from "./NumberSelector";
 import TotalScore from "./TotalScore";
+import RoleDice from "./RoleDice"
 
 const GamePlay = () => {
   return (
@@ -10,6 +11,7 @@ const GamePlay = () => {
      <TotalScore/>
      <NumberSelector/>
      </div>
+     <RoleDice/>
     </Maincontainer>  
    
   );
@@ -17,10 +19,12 @@ const GamePlay = () => {
 
 export default GamePlay
 
-const Maincontainer = styled.div`
-
+const Maincontainer = styled.main`
+      padding-top:70px;
    .topsection{
    display: flex;
+   justify-content: space-around;
+   align-items: end;
    }
 
 
